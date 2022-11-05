@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>login</title>
+<style>
+    *{margin:0;padding: 0;box-sizing: border-box;}
+    
+
+body{
+    
+    background-image: url(./degrade.jpg);
+}
+
+
+form {
+background-color: rgb(230, 226, 226);
+max-width: 450px;
+height: 450px;
+width: 70%;
+padding: 20px;
+border-radius: 7px;
+position: absolute;
+left: 50%;
+top:50%;
+transform: translate(-50%,-50%);
+box-shadow: 9px 10px 25px rgb(16, 146, 253);;
+
+
+
+}
+
+form h3 {
+text-align: center;
+color: rgb(72, 164, 255);
+font-family: 'Courier New', Courier, monospace;
+font-size: 40px;
+padding-bottom:  10px;
+
+}
+/*-----------------estilização do botão-----------------*/  
+form input[type=text],
+form input[type=password]{
+width:100%;
+height: 44px;
+border: 0; 
+padding-left: 10px;
+margin: 10px 0;
+}
+
+form input[type=submit]{
+    width: 100%;
+    height:30px;
+    cursor:pointer;
+    background-color: #13acdbcd;
+    border: 0;
+    color:white;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+form input[type=submit]:hover{
+    background-color: #39bfe882;
+    
+}
+
+
+form input[type=password]:focus{
+    outline: 0;
+   
+}
+
+
+form input[type=text]:focus{
+    outline: 0;
+}
+/*-----------------botão esqueci a senha -----------------*/  
+.esqueci button{
+   display: flex;
+   justify-content:center;
+   width: 100px;
+   height: 35px;
+   padding: 2px;
+   margin-top: 10px;
+   background-color: #13acdbcd;
+    border: 0;
+    color:white;
+    border-radius: 8px;
+    transition: 1s;
+}
+.esqueci button:hover{
+    background-color: #4ccdf4cd ;
+}
+/*-----------------botão gestão-----------------*/  
+.gestao{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    font-size: 13px;
+    text-decoration: none;
+   
+}
+.gestao:hover{
+    color: #13acdbcd;
+}
+/*-----------------botão lembar-----------------*/  
+.lembar{
+    display: flex;
+    justify-content: end;
+    margin-top: 8px;
+    border: 0;
+    border-radius: 8px;
+    transition: 1s;
+    font-size: 13px;
+}
+
+.lembar:hover{
+    color:#13acdbcd;
+}
+
+
+
+</style>
+</head>
+
+
+<body>
+    
+    <form>
+       
+            <h3>Login</h3>
+                
+            <input id="email"type="text" name="email" placeholder="Seu e-mail"/>
+            <input id="password" type="password" name="password" nome="senha" placeholder="Sua senha "/>
+            <input type="submit" nome="Enviar" value="Enviar" id="Enviar" onclick="enviar()"/>
+            
+            <Div class="esqueci"  id="esqueci">
+                <button>Esqueci a Senha</button>
+            </Div> 
+
+            <Div class="gestao" >
+               <a href="./login gestao/gestão.html">login gentão </a> 
+            </Div>
+
+            <div class="lembar">
+                Lembrar-me  <input type="checkbox" name="lembar" id="lembar">
+            </div>
+
+
+
+            <!--   futura  atualização  
+                <div class="redes">
+                <ul>
+                    
+            
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="./img/facebook.png" alt="facebook">
+                            <p>facebook</p>
+                        </a> 
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/pedror62/" target="_blank">
+                            <img src="./img/instagram.png" alt="Instagram">
+                            <p>Instagram</p>
+                        </a> 
+                    </li>
+
+                    
+                </ul> -->
+
+
+
+
+            </div>
+        
+       
+
+
+     
+    </form>
+   
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
